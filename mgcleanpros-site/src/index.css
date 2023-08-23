@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background: rgb(61, 143, 179);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 70px;
+  align-items: center;
+}
+
+.site-title {
+  margin: 0;
+}
+
+.booknow-btn-header {
+  margin: auto;
+  transition: .2s ease-in-out;
+}
+
+.booknow-btn-header:hover {
+  background: white;
+  color: rgb(42, 110, 138);
+}
+
+nav {
+  display: flex;
+  background-color: rgb(42, 110, 138);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  top: 70px;
+  transition: .3s all ease;
+}
+
+.fa-bars, .fa-xmark {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+  padding: .25rem;
+  border-bottom: 1px solid rgb(42, 110, 138);
+  transition: .2s ease-in-out;
+  text-align: center;
+  color:rgb(211, 239, 251);
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid rgb(211, 239, 251);
+  color: white;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: rgb(211, 239, 251);
+  height: 400px;
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.booknow-btn, .booknow-btn-header {
+  border: none;
+  font-size: 1rem;
+  padding: .5rem;
+  background: rgb(42, 110, 138);
+  color: white;
+  border-radius: 6px;
+}
