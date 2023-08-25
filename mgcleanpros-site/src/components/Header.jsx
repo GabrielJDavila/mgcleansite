@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function Header(props) {
 
     const navStyles = {
-        height: props.showMenu ? "200px" : "0",
+        height: props.showMenu ? "250px" : "0",
         overflowX: props.showMenu ? "" : "hidden",
         padding: props.showMenu ? ".5rem .5rem" : "0"
     }
