@@ -9,8 +9,8 @@ body {
 }
 
 .site-header {
-  background: rgb(61, 143, 179);
-  color: white;
+  background: white;
+  color: rgb(61, 143, 179);
   display: flex;
   flex-direction: row;
   position: relative;
@@ -26,11 +26,6 @@ body {
 .booknow-btn-header {
   margin: auto;
   transition: .2s ease-in-out;
-}
-
-.booknow-btn-header:hover {
-  background: white;
-  color: rgb(42, 110, 138);
 }
 
 nav {
@@ -73,21 +68,32 @@ nav {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: rgb(211, 239, 251);
+  background-color: rgb(61, 143, 179);
+  background-image: url("./cleaningspray.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 400px;
 }
 
 .hero-title {
-  margin: 0;
+  margin: 1rem;
+  color: white;
 }
 
 .booknow-btn, .booknow-btn-header {
   border: none;
   font-size: 1rem;
   padding: .5rem;
-  background: rgb(42, 110, 138);
+  background: rgb(61, 143, 179);
   color: white;
   border-radius: 6px;
+  transition: .2s ease-in-out;
+}
+
+.booknow-btn:hover, .booknow-btn-header:hover {
+  background: rgb(42, 110, 138);
 }
 
 .services-title,
@@ -109,24 +115,38 @@ nav {
   margin: 1rem;
 }
 
+.service-title-icon-container {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+}
+
+.services-icon {
+  width: 60px;
+}
+
 .services-title {}
 
 .service-item {
+  border-bottom: 2px solid rgb(189, 189, 189);
+  width: 90%;
+  max-width: 400px;
+  margin: 1rem auto;
+  padding: .5rem;
 }
 
 .service-item-title {
-  text-align: left;
   padding-bottom: .25rem;
   padding-left: 10px;
   margin-bottom: 0;
 }
 
-.service-item-underline {
+/* .service-item-underline {
   border-bottom: 3px solid rgb(61, 143, 179);
   border-radius: 6px;
   width: 100px;
   margin-left: 10px;
-}
+} */
 
 .service-item-description {
   padding: 0 10px;
@@ -138,13 +158,60 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgb(61, 143, 179);
+  color: white;
 }
 
 .about-title {}
 
-.about-image {}
+.fa-chevron-down {
+  font-size: 1.5rem;
+}
 
 .about-description {
-  padding: 0 10px;
+  
+}
+
+.more-about-us-section {
+  text-align: center;
+  padding-top: .5rem;
+}
+
+.our-tenants-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tenants-item {
+  background: rgb(61, 143, 179);
+  width: 60%;
+  max-width: 300px;
+  margin: .5rem auto;
+  padding: 1rem;
+  color: white;
+}
+
+.call-today-text {
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.call-today-btn {
+  background: rgb(61, 143, 179);
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 1px rgb(156, 156, 156);
+  transition: .2s ease-in-out;
+}
+
+.call-today-btn:visited {
+  color: white;
+}
+
+.call-today-btn:hover {
+  background: rgb(42, 110, 138);
 }
