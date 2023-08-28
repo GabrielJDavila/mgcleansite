@@ -77,7 +77,7 @@ a {
   text-align: center;
   justify-content: center;
   background-color: rgb(61, 143, 179);
-  background-image: url("./cleaningspray.png");
+  background-image: url("/cleaningspray.png");
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
