@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function Header(props) {
 
     const navStyles = {
-        height: props.showMenu ? "250px" : "0",
+        height: props.showMenu ? "300px" : "0",
         overflowX: props.showMenu ? "" : "hidden",
         padding: props.showMenu ? ".5rem .5rem" : "0"
     }
@@ -19,17 +19,18 @@ export default function Header(props) {
 
     return (
         <header className="site-header">
-            <h2 className="site-title">M&G Clean Pros</h2>
+            <img src="./mgcleanlogo.jpg" className="site-title"/>
             
             <button className="booknow-btn-header">Book now</button>
             {!props.showMenu ? <i className="fa-solid fa-bars" onClick={props.toggleMenu}></i> :
             <i className="fa-solid fa-xmark" onClick={props.toggleMenu}></i>
             }
             <nav style={navStyles}>
-                <a className="nav-item" style={navItemStyles}>home</a>
-                <a className="nav-item" style={navItemStyles}>about</a>
-                <a className="nav-item" style={navItemStyles}>services</a>
-                <a className="nav-item" style={navItemStyles}>contact</a>
+                <a href="/" className="nav-item" style={navItemStyles} onClick={props.toggleMenu}>home</a>
+                <a href="#services" className="nav-item" style={navItemStyles} onClick={props.toggleMenu}>services</a>
+                <a href="#about" className="nav-item" style={navItemStyles} onClick={props.toggleMenu}>about</a>
+                <a href="#reviews" className="nav-item" style={navItemStyles} onClick={props.toggleMenu}>reviews</a>
+                <a href="#areas" className="nav-item" style={navItemStyles} onClick={props.toggleMenu}>service areas</a>
             </nav>
         </header>
     )

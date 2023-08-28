@@ -32,7 +32,7 @@ export default function Services() {
     })
     return (
         <div className="services-section">
-            <h2 className="services-title">Our Services</h2>
+            <h2 id="services" className="services-title">Our Services</h2>
             <div className="title-underline"></div>
             {services}
         </div>

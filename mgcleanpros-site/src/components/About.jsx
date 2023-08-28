@@ -2,7 +2,7 @@
 export default function About() {
     return (
         <>
-        <div className="about-section">
+        <div id="about" className="about-section">
             <h2 className="about-title">A Little Story About Us</h2>
             <div className="title-underline"></div>
             <i className="fa-solid fa-chevron-down"></i>

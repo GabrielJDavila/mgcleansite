@@ -13,13 +13,16 @@ body {
   color: rgb(61, 143, 179);
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
+  width: 100%;
   height: 70px;
   align-items: center;
+  z-index: 1;
 }
 
 .site-title {
   margin: 0 0 0 .75rem;
+  width: 90px;
   font-family: "Lobster", cursive;
 }
 
@@ -49,12 +52,17 @@ nav {
 
 .nav-item {
   font-size: 1.25rem;
-  margin: .5rem 0;
-  padding: .25rem;
+  margin: 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid rgb(42, 110, 138);
   transition: .2s ease-in-out;
   text-align: center;
   color:rgb(211, 239, 251);
+  text-decoration: none;
+}
+
+a {
+  padding: 1rem;
 }
 
 .nav-item:hover {
@@ -128,7 +136,7 @@ nav {
 .services-title {}
 
 .service-item {
-  border-bottom: 2px solid rgb(189, 189, 189);
+  border-bottom: 2px solid rgb(237, 237, 237);
   width: 90%;
   max-width: 400px;
   margin: 1rem auto;
@@ -177,6 +185,10 @@ nav {
 .more-about-us-section {
   text-align: center;
   padding-top: .5rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid rgb(237, 237, 237);
+  width: 80%;
+  margin: 0 auto;
 }
 
 .our-tenants-list {
@@ -186,7 +198,7 @@ nav {
 
 .tenants-item {
   background: rgb(61, 143, 179);
-  width: 60%;
+  width: 80%;
   max-width: 300px;
   margin: .5rem auto;
   padding: 1rem;
@@ -214,4 +226,56 @@ nav {
 
 .call-today-btn:hover {
   background: rgb(42, 110, 138);
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 1rem 1rem;
+  text-align: center;
+  gap: 16px;
+  position: relative;
+}
+
+.review-section-title {}
+
+.review-item {
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 10px;
+  padding: .5rem;
+  box-shadow: 0 0 10px 1px rgb(237, 237, 237);
+}
+
+.review-text {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.review-name {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.contact-section {}
+
+footer {
+  background: rgb(61, 143, 179);
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin-bottom: 0;
+  color: white;
+}
+
+.fb-link {
+  color: white;
+  font-size: 2rem;
+  padding: 0;
 }
