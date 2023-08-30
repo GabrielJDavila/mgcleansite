@@ -6,7 +6,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import About from './components/About'
 import Reviews from './components/Reviews'
-import Contact from './components/Contact'
+import Location from './components/Location'
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
@@ -25,7 +25,7 @@ function App() {
       <Services />
       <About />
       <Reviews />
-      <Contact />
+      <Location />
       <Footer />
     </div>
   )
