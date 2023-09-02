@@ -34,7 +34,9 @@ export default function Services() {
         <div className="services-section">
             <h2 id="services" className="services-title">Our Services</h2>
             <div className="title-underline"></div>
-            {services}
+            <div className="services-list">
+                {services}
+            </div>
         </div>
     )
 }

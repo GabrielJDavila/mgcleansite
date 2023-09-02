@@ -34,7 +34,9 @@ export default function Reviews() {
     return (
         <div id="reviews" className="review-section">
             <h2 className="review-section-title">What Customers Say About Us...</h2>
-            {renderedReviews}
+            <div className="reviews-list">
+                {renderedReviews}
+            </div>
             {/* <div className="carousel-button-container">
                 <i class="fa-solid fa-chevron-left"></i>
                 <i class="fa-solid fa-chevron-right"></i>

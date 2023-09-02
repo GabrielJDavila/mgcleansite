@@ -43,9 +43,10 @@ h2 {
 .booknow-btn-header {
   margin: auto;
   transition: .2s ease-in-out;
+  text-decoration: none;
 }
 
-nav {
+.mobile-nav {
   display: flex;
   background-color: rgb(42, 110, 138);
   width: 100%;
@@ -56,6 +57,10 @@ nav {
   overflow: hidden;
   top: 70px;
   transition: .3s all ease;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .fa-bars, .fa-xmark {
@@ -109,8 +114,9 @@ a {
   list-style: none;
   flex-direction: column;
   padding: 0;
+  width: 80%;
   text-align: center;
-  margin: 1rem 4rem;
+  margin: 1rem auto;
 }
 
 .cta-item {
@@ -123,7 +129,7 @@ a {
 }
 
 .fa-circle-check {
-  margin-right: auto;
+  margin-right: 0;
   color: rgb(62, 192, 247);
   border-radius: 100%;
   font-size: 1.5rem;
@@ -142,6 +148,7 @@ a {
   color: white;
   border-radius: 6px;
   transition: .2s ease-in-out;
+  text-decoration: none;
 }
 
 .booknow-btn:hover, .booknow-btn-header:hover {
@@ -278,10 +285,15 @@ a {
   justify-content: center;
   margin: 3rem 1rem 1rem;
   text-align: center;
-  gap: 16px;
   position: relative;
   padding-bottom: 2rem;
   border-bottom: 2px solid rgb(237, 237, 237)
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .review-item {
@@ -347,4 +359,96 @@ footer {
   color: white;
   font-size: 2rem;
   padding: 0;
+}
+
+@media screen and (min-width: 650px) {
+  .services-list {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .service-title-icon-container {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .service-item-description {
+    text-align: center;
+  }
+
+  .our-tenants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .review-item {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+
+  .site-header {
+    height: 80px;
+  }
+
+  .site-title {
+    width: 120px;
+  }
+
+  .booknow-btn-header {
+    margin: 0 2rem 0 auto;
+  }
+
+  .fa-bars, .fa-xmark, .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s all ease;
+  }
+
+  .nav-item {
+    color: rgb(61, 143, 179);
+    font-size: 1rem;
+    border-bottom: 0;
+    transition: .3s all ease;
+    border-bottom: 2px solid white;
+  }
+
+  .nav-item:hover {
+    color: rgb(42, 110, 138);
+    border-bottom: 2px solid rgb(42, 110, 138);
+  }
+
+  .cta-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .our-tenants-list {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }

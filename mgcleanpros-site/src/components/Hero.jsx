@@ -19,7 +19,7 @@ export default function Hero() {
                     </li>
                     
                 </ul>
-                <button className="booknow-btn">Book now</button>
+                <a href="tel:+6306423773" className="booknow-btn">Book now</a>
             </div>
         </div>
     )
