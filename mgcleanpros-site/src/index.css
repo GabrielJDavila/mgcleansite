@@ -40,8 +40,12 @@ h2 {
   font-family: "Lobster", cursive;
 }
 
+.header-text {
+  display: none;
+}
+
 .booknow-btn-header {
-  margin: auto;
+  margin: 0 .5rem 0 auto;
   transition: .2s ease-in-out;
   text-decoration: none;
 }
@@ -408,7 +412,7 @@ footer {
   }
 
   .booknow-btn-header {
-    margin: 0 2rem 0 auto;
+    margin: 0 2rem 0 0;
   }
 
   .fa-bars, .fa-xmark, .mobile-nav {
@@ -439,6 +443,14 @@ footer {
 
   .cta-container {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .header-text {
+    display: block;
+    margin-right: .5rem;
+    color: black;
   }
 }
 

@@ -38,6 +38,7 @@ export default function Header(props) {
                 <a href="#reviews" className="nav-item" style={navItemStyles}>reviews</a>
                 <a href="#areas" className="nav-item" style={navItemStyles}>service areas</a>
             </nav>
+            <p className="header-text">Call us today!</p>
             <a className="booknow-btn-header" href="tel:+6306423773">Book now</a>
             {!props.showMenu ? <i className="fa-solid fa-bars" onClick={props.toggleMenu}></i> :
             <i className="fa-solid fa-xmark" onClick={props.toggleMenu}></i>
