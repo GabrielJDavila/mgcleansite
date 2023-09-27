@@ -4,17 +4,17 @@ export default function Services() {
         {
             title: "Residential Cleaning",
             image: "./homeicon.png",
-            descrip: "Moving in, moving out, deep cleans, maintaince cleans, we do it all! Call us for a clean home you can come relax in, knowing all the hard work is done for you.",
+            descrip: "Moving in, moving out, deep cleans, maintaince cleans, we do it all! You deserve a clean home that you can relax in.",
         },
         {
-            title: "Office Cleaning",
+            title: "Commercial Cleaning",
             image: "./officeicon.png",
-            descrip: "For the business that is customer-focused, you might want a clean area for your customers to enjoy the space. We'll come make sure your business is in top-top shape.",
+            descrip: "For the business that is customer-focused, we can get your place in top-notch shape! We clean office suites, office spaces, salons, party rooms, gyms, etc.",
         },
         {
             title: "Speciality Cleaning",
             image: "./suppliesicon.png",
-            descrip: "Not sure if we can be your solution? We've done grocery deli kitchens, gyms, garage clean outs, minor junk removal, etc. We've either done it, or are willing to do it. Give us a call!",
+            descrip: "Not sure if we can be your solution? We've done grocery deli kitchens, garage clean outs, minor junk removal, after party cleaning, etc. We've either done it, or are willing to do it. Give us a call!",
         }
     ]
 
