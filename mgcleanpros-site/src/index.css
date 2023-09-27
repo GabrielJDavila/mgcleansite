@@ -35,17 +35,18 @@ h2 {
 }
 
 .site-title {
-  margin: 0 0 0 .75rem;
   width: 90px;
   font-family: "Lobster", cursive;
 }
 
 .header-text {
-  display: none;
+  display: block;
+  margin-left: auto;
+  color: black;
 }
 
 .booknow-btn-header {
-  margin: 0 .5rem 0 auto;
+  margin-left: .5rem;
   transition: .2s ease-in-out;
   text-decoration: none;
 }
@@ -68,7 +69,7 @@ h2 {
 }
 
 .fa-bars, .fa-xmark {
-  margin-left: auto;
+  margin-left: 1rem;
   margin-right: 1rem;
   font-size: 2rem;
 }
@@ -188,8 +189,6 @@ a {
   width: 60px;
 }
 
-.services-title {}
-
 .service-item {
   border-bottom: 2px solid rgb(237, 237, 237);
   width: 90%;
@@ -203,13 +202,6 @@ a {
   padding-left: 10px;
   margin-bottom: 0;
 }
-
-/* .service-item-underline {
-  border-bottom: 3px solid rgb(61, 143, 179);
-  border-radius: 6px;
-  width: 100px;
-  margin-left: 10px;
-} */
 
 .service-item-description {
   padding: 0 10px;
@@ -227,14 +219,8 @@ a {
   color: white;
 }
 
-.about-title {}
-
 .fa-chevron-down {
   font-size: 1.5rem;
-}
-
-.about-description {
-  
 }
 
 .more-about-us-section {
@@ -412,7 +398,7 @@ footer {
   }
 
   .booknow-btn-header {
-    margin: 0 2rem 0 0;
+    margin: 0 1rem 0 .5rem;
   }
 
   .fa-bars, .fa-xmark, .mobile-nav {
@@ -443,14 +429,6 @@ footer {
 
   .cta-container {
     flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .header-text {
-    display: block;
-    margin-right: .5rem;
-    color: black;
   }
 }
 
