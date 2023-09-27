@@ -72,6 +72,7 @@ h2 {
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .nav-item {
@@ -387,7 +388,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
 
   .site-header {
     height: 80px;
@@ -407,11 +408,16 @@ footer {
 
   .desktop-nav {
     display: flex;
-    width: 50%;
-    margin: auto;
-    justify-content: space-between;
+    max-width: 650px;
+    margin: 0 1rem 0 auto;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     transition: .3s all ease;
+  }
+
+  .header-text {
+    margin: 0 0 0 1rem;
   }
 
   .nav-item {
@@ -431,6 +437,7 @@ footer {
     flex-direction: row;
   }
 }
+
 
 @media screen and (min-width: 1150px) {
   .our-tenants-list {
