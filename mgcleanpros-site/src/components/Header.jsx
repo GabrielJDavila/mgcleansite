@@ -1,17 +1,4 @@
-import { useState, useEffect } from "react";
-
 export default function Header(props) {
-    // const [windowWidth, setWindowWidth] = useState({width: window.innerWidth})
-    // console.log(windowWidth)
-    // // useEffect(() => {
-
-    // //     function handleResize() {
-    // //         setWindowWidth({width: window.innerWidth})
-    // //     }
-
-    // //     window.addEventListener("resize", handleResize)
-
-    // // }, [windowWidth])
 
     const navStyles = {
         height: props.showMenu ? "300px" : "0",

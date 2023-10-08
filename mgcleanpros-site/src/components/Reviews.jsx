@@ -1,23 +1,22 @@
 import { useState, useRef } from "react"
 export default function Reviews() {
-    const [reviewCount, setReviewCount] = useState(0)
 
     const data = [
         {
             review: "They are the best! Professional, timely, and great customer service.",
-            name: "Ashley Tisdale"
+            name: "Ashley T."
         },
         {
             review: "I will never look for other cleaners again. These people are amazing.",
-            name: "Drew Barymore"
+            name: "Drew B."
         },
         {
             review: "Marie and her team are customer focused; they get the job done and go above and beyond.",
-            name: "Tasha Nasha"
+            name: "Tasha N."
         },
         {
             review: "Amazing work, they always beat my expectations!",
-            name: "Sunali Bunali"
+            name: "Sunali B."
         }
     ]
 
@@ -37,10 +36,6 @@ export default function Reviews() {
             <div className="reviews-list">
                 {renderedReviews}
             </div>
-            {/* <div className="carousel-button-container">
-                <i class="fa-solid fa-chevron-left"></i>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div> */}
         </div>
     )
 }
