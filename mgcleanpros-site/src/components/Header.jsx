@@ -1,18 +1,16 @@
 export default function Header(props) {
 
+    // css styles to implement for mobile menu
     const navStyles = {
         height: props.showMenu ? "300px" : "0",
         overflowX: props.showMenu ? "" : "hidden",
         padding: props.showMenu ? ".5rem .5rem" : "0"
     }
 
+    // css styles for mobile menu nav items
     const navItemStyles = {
         margin: props.showMenu ? ".5rem 0" : "0",
         padding: props.showMenu ? ".25rem" : "0"
-    }
-
-    const position = {
-        display: !props.showMenu && "none",
     }
 
     return (

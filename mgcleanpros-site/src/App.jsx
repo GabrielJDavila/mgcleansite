@@ -11,6 +11,7 @@ import Location from './components/Location'
 function App() {
   const [showMenu, setShowMenu] = useState(false)
 
+  // function to toggle the state of showMenu
   function toggleMenu() {
     setShowMenu(prev => !prev)
   }
