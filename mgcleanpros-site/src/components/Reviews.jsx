@@ -34,7 +34,8 @@ export default function Reviews() {
         <div id="reviews" className="review-section">
             <h2 className="review-section-title">What Customers Say About Us...</h2>
             <div className="reviews-list">
-                {renderedReviews}
+                <h1>Coming Soon!</h1>
+                {/* {renderedReviews} */}
             </div>
         </div>
     )
