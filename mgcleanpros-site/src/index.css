@@ -53,6 +53,7 @@ h2 {
 
 .mobile-nav {
   display: flex;
+  gap: 2rem;
   background-color: rgb(42, 110, 138);
   width: 100%;
   justify-content: center;
