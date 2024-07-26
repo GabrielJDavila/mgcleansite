@@ -305,6 +305,12 @@ a {
   margin-right: 1rem;
 }
 
+.gall-img {
+  width: 100%;
+  height: 500px;
+  transition: background-image 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 .location-section {
   margin: 48px 16px 16px;
   text-align: center;
