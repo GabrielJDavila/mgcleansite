@@ -10,7 +10,8 @@ import img9 from "/gallery/mgcleanbefore.jpg"
 import img10 from "/gallery/mgcleanafter.jpg"
 import img11 from "/gallery/mgcleanbefore2.jpg"
 import img12 from "/gallery/mgcleanafter2.jpg"
-import { useState } from "react"
+import { Bars3Icon, ChevronDownIcon, XMarkIcon, ArrowRightCircleIcon, ArrowLeftCircleIcon } from "@heroicons/react/24/solid"
+import { useState, useEffect } from "react"
 
 const imgArray = [
     img1,
@@ -30,6 +31,14 @@ const imgArray = [
 export default function Gallery() {
     const [arrIndex, setArrIndex] = useState(0)
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleClickNext()
+        }, 5000)
+
+        return () => clearInterval(interval)
+    }, [arrIndex])
+
     function handleClickNext() {
         setArrIndex(prev => (prev + 1) % imgArray.length)
     }
@@ -38,13 +47,40 @@ export default function Gallery() {
         setArrIndex(prev => prev >= 1 ? (prev - 1) % imgArray.length : prev = imgArray.length - 1)
     }
 
+    const renderedImages = imgArray.map((image, index) => {
+        console.log(image)
+        return (
+            <img key={index} src={image} className={`gall-img ${index === arrIndex ? "current-img" : ""}`}></img>
+        )
+    })
+
     console.log(arrIndex)
     return (
-        <section className="gallery">
-            <div>Gal Section Here</div>
-            <img src={imgArray[arrIndex]} className="gall-img"></img>
-            <button onClick={handleClickNext}>click next</button>
-            <button onClick={handleClickPrev}>click prev</button>
+        <section className="gallery-section">
+            <h2 className="gallery-title">Gallery of Our Work</h2>
+            <div className="gall-div">
+                {renderedImages}
+                {/* <img src={imgArray[arrIndex]} className="gall-img"></img> */}
+                <div className="gal-btn-div">
+                    <div className={`gal-btn ${0 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${1 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${2 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${3 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${4 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${5 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${6 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${7 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${8 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${9 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${10 === arrIndex ? "current-btn" : ""}`}></div>
+                    <div className={`gal-btn ${11 === arrIndex ? "current-btn" : ""}`}></div>
+                </div>
+            </div>
+            
+            <div className="gal-next-and-prev-div">
+                <ArrowLeftCircleIcon onClick={handleClickPrev} className="prev"/>
+                <ArrowRightCircleIcon onClick={handleClickNext} className="next"/>
+            </div>
         </section>
     )
 }
