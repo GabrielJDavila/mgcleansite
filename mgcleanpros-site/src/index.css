@@ -9,7 +9,8 @@ body {
 }
 
 h1, h2 {
-  font-family: "Dancing Script", cursive;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
   color: rgb(245, 117, 187);
 }
 
@@ -325,15 +326,18 @@ a {
   left: 0;
   right: 0;
   width: 100%;
+  max-width: 350px;
   height: 500px;
-  transition: background-image 1s ease-in-out, opacity 0.5s ease-in-out;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   border-radius: 8px;
   display: hidden;
 }
 
 .current-img {
   z-index: 11;
-  transition: background-image 1s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .gal-btn-div {
@@ -458,6 +462,27 @@ footer {
   .review-item {
     max-width: 500px;
   }
+
+  .gall-div {
+    height: 605px;
+  }
+
+  .gall-img {
+    max-width: 450px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gall-div {
+    height: 705px;
+  }
+
+  .gall-img {
+    max-width: 550px;
+    height: 700px;
+  }
+  
 }
 
 @media screen and (min-width: 950px) {
@@ -507,6 +532,80 @@ footer {
 
   .cta-container {
     flex-direction: row;
+  }
+
+  .gallery-section {
+    padding: 20px 12rem;
+    margin: 48px 0;
+    text-align: center;
+  }
+  
+  .gall-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 10px;
+    height: auto;
+  }
+  
+  .gall-img {
+    position: static;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 8px;
+  }
+
+  .gall-div img:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gall-div img:nth-child(6) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gall-div img:nth-child(11) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .gall-div img:nth-child(12) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .gal-btn-div {
+    display: none;
+    /* position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    width: 250px;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 12; */
+  }
+  
+  .gal-btn {
+    width: 6px;
+    padding: 6px;
+    border-radius: 100%;
+    background-color: gray;
+    opacity: .5;
+  }
+  
+  .current-btn {
+    background-color: rgb(221, 221, 221);
+    opacity: 1;
+  }
+  
+  .gal-next-and-prev-div {
+    display: none;
   }
 }
 
