@@ -40,7 +40,7 @@ export default function Gallery() {
     }, []);
 
     useEffect(() => {
-        if(windowWidth <= 768) {
+        if(windowWidth < 950) {
             const interval = setInterval(() => {
                 handleClickNext()
             }, 3000)
